@@ -793,6 +793,14 @@
         "USE_LOCAL": "Usar local",
         "USE_REMOTE": "Usar control remoto"
       },
+      "D_INCOMPLETE_SYNC": {
+        "BTN_CLOSE_APP": "Cerrar aplicación",
+        "BTN_DOWNLOAD_BACKUP": "Descargar copia de seguridad local"
+      },
+      "D_PERMISSION": {
+        "DISABLE_SYNC": "Deshabilitar sincronización",
+        "PERM_FILE": "Dar permiso"
+      },
       "FORM": {
         "DROPBOX": {
           "L_ACCESS_TOKEN": "Token de acceso (generado a partir del código de autenticación)"
@@ -800,6 +808,12 @@
         "GOOGLE": {
           "L_SYNC_FILE_NAME": "Sincronizar nombre de archivo",
           "L_IS_COMPRESS_DATA": "Comprimir datos"
+        },
+        "LOCAL_FILE": {
+          "L_SYNC_FOLDER_PATH": "Ruta de la carpeta de sincronización",
+          "L_SYNC_FILE_PATH_PERMISSION_VALIDATION": "Necesita permiso de acceso a archivos",
+          "L_SYNC_FILE_PATH": "Ruta del archivo de sincronización",
+          "L_SYNC_FILE_PATH_DESCRIPTION": "Ruta absoluta al archivo que se debe utilizar para la sincronización (se creará)."
         },
         "L_ENABLE_SYNCING": "Habilitar sincronización",
         "L_SYNC_INTERVAL": "Intervalo de sincronización",
@@ -809,17 +823,17 @@
           "CORS_INFO": "<strong>¡Experimental!</strong> Para que esto funcione, debe deshabilitar o limitar CORS para su instancia de Nextcloud, lo que puede tener implicaciones de seguridad negativas. <a href='https://github.com/nextcloud/server/issues/3131'>Consulte este hilo</a> para obtener más información. ¡Úselo bajo su propio riesgo!",
           "L_BASE_URL": "URL base",
           "L_PASSWORD": "Contraseña",
+          "L_SYNC_FOLDER_PATH": "Ruta de la Carpeta de Sincronización",
           "L_USER_NAME": "Nombre de usuario",
           "L_SYNC_FILE_PATH": "Ruta del archivo de sincronización"
-        },
-        "LOCAL_FILE": {
-          "L_SYNC_FILE_PATH": "Ruta del archivo de sincronización",
-          "L_SYNC_FILE_PATH_DESCRIPTION": "Ruta absoluta al archivo que se debe utilizar para la sincronización (se creará)."
         }
       },
       "S": {
+        "ALREADY_IN_SYNC": "Ya sincronizado",
+        "ALREADY_IN_SYNC_NO_LOCAL_CHANGES": "Sin cambios locales – Ya sincronizado",
         "ERROR_FALLBACK_TO_BACKUP": "Algo salió mal al importar los datos. Volviendo a la copia de seguridad local.",
         "ERROR_INVALID_DATA": "Error al sincronizar. Datos inválidos",
+        "ERROR_NO_REV": "No hay ninguna rev válida para el archivo remoto",
         "IMPORTING": "Importando datos",
         "INCOMPLETE_CFG": "Error de autenticación para sincronización. Por favor, compruebe su configuración.",
         "INITIAL_SYNC_ERROR": "Error de sincronización inicial",
@@ -861,11 +875,13 @@
         "LOCAL_ATTACHMENTS": "Adjuntos locales",
         "NOTES": "Notas",
         "PARENT": "Padre",
+        "SCHEDULED_AT": "Programado en",
         "REMINDER": "Recordatorio",
         "REPEAT": "Repetir",
         "SCHEDULE_TASK": "Tarea programada",
         "SUB_TASKS": "Subtareas ({{nr}})",
-        "TIME": "hora"
+        "TIME": "hora",
+        "TITLE_PLACEHOLDER": "Introduzca un título"
       },
       "ADD_TASK_BAR": {
         "ADD_EXISTING_TASK": "Agregar tarea existente \"{{taskTitle}}\"",
@@ -891,6 +907,8 @@
         "DROP_ATTACHMENT": "Suelta aquí para adjuntar a \"{{title}}\"",
         "EDIT_SCHEDULED": "Editar recordatorio",
         "EDIT_TAGS": "Editar etiquetas",
+        "EDIT_TASK_TITLE": "Editar título",
+        "FOCUS_SESSION": "Iniciar sesión de enfoque",
         "MARK_DONE": "marcar como realizada",
         "MARK_UNDONE": "Marcar como no realizada",
         "MOVE_TO_BACKLOG": "Mover al registro de trabajo",
@@ -911,9 +929,19 @@
         "TRACK_TIME_STOP": "Pausar tiempo de seguimiento",
         "UPDATE_ISSUE_DATA": "Actualizar datos de problemas"
       },
+      "D_CONFIRM_SHORT_SYNTAX_NEW_TAG": {
+        "OK": "Crear etiqueta"
+      },
+      "D_CONFIRM_SHORT_SYNTAX_NEW_TAGS": {
+        "OK": "Crear etiquetas"
+      },
       "D_SCHEDULE_TASK": {
         "MOVE_TO_BACKLOG": "Mover la tarea al registro de trabajos hasta que sea programado",
         "REMIND_AT": "Recordar en",
+        "QA_NEXT_MONTH": "Programa el próximo mes",
+        "QA_NEXT_WEEK": "Programa la próxima semana",
+        "QA_TODAY": "Programar hoy",
+        "QA_TOMORROW": "Programar mañana",
         "RO_10M": "10 minutos antes de que comience",
         "RO_15M": "15 minutos antes de que comience",
         "RO_1H": "1 hora antes de que comience",
@@ -940,6 +968,7 @@
         "FOR_OTHER": "Tarea programada. ¿Quieres empezar a trabajar en ella?",
         "FROM_PROJECT": "Del proyecto",
         "FROM_TAG": "De la etiqueta: \"{{title}}\"",
+        "RESCHEDULE_EDIT": "Editar (Reprogramar)",
         "RESCHEDULE_UNTIL_TOMORROW": "Hasta mañana",
         "SNOOZE": "Posponer",
         "SNOOZE_ALL": "Posponer todo",
@@ -1011,6 +1040,13 @@
       "D_CONFIRM_REMOVE": {
         "MSG": "Eliminar la configuración de repetición convertirá todas las instancias anteriores de esta tarea a tareas normales. Estás seguro que deseas continuar",
         "OK": "Quitar completamente"
+      },
+      "D_CONFIRM_UPDATE_INSTANCES": {
+        "CANCEL": "Solo tareas futuras",
+        "OK": "Actualizar todas las instancias"
+      },
+      "D_CONFIRM_MOVE_TO_PROJECT": {
+        "OK": "Actualizar todas las instancias"
       },
       "D_EDIT": {
         "ADD": "Agregar Repetir configuración de tarea",
