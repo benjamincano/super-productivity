@@ -180,9 +180,14 @@
       "WORKED_FOR": "Trabajaste durante"
     },
     "GITEA": {
+      "DIALOG_INITIAL": {
+        "TITLE": "Configurar Gitea para el proyecto"
+      },
       "FORM": {
         "FILTER_USER": "Nombre de usuario (por ejemplo, para filtrar cambios realizados por ti mismo)",
+        "IS_AUTO_IMPORT_ISSUES": "Agregar automáticamente problemas no resueltos de Gitea al backlog",
         "IS_AUTO_POLL": "Sondear automáticamente los problemas de Git importados en busca de cambios",
+        "HOST": "Host (por ejemplo: https://try.gitea.io)",
         "REPO_FULL_NAME": "Nombre de usuario o nombre de la organización/proyecto",
         "SCOPE_ALL": "Todos",
         "SCOPE_ASSIGNED": "Asignado a mí",
