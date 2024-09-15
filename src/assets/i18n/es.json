@@ -187,17 +187,28 @@
         "FILTER_USER": "Nombre de usuario (por ejemplo, para filtrar cambios realizados por ti mismo)",
         "IS_AUTO_IMPORT_ISSUES": "Agregar automáticamente problemas no resueltos de Gitea al backlog",
         "IS_AUTO_POLL": "Sondear automáticamente los problemas de Git importados en busca de cambios",
+        "IS_SEARCH_ISSUES_FROM_GITEA": "Mostrar problemas de git como sugerencias al agregar nuevas tareas",
         "HOST": "Host (por ejemplo: https://try.gitea.io)",
+        "TOKEN": "Token de Acceso",
         "REPO_FULL_NAME": "Nombre de usuario o nombre de la organización/proyecto",
+        "REPO_FULL_NAME_DESCRIPTION": "Se puede encontrar como parte de la URL, al ver el proyecto en el navegador.",
+        "SCOPE": "Alcance",
         "SCOPE_ALL": "Todos",
         "SCOPE_ASSIGNED": "Asignado a mí",
         "SCOPE_CREATED": "Creado por mí"
       },
+      "FORM_SECTION": {
+        "TITLE": "Gitea"
+      },
       "ISSUE_CONTENT": {
         "ASSIGNEE": "Responsable",
+        "AT": "en",
         "DESCRIPTION": "Descripción",
+        "LABELS": "Etiquetas",
         "MARK_AS_CHECKED": "Marcar actualizaciones como verificadas",
+        "PROJECT": "Proyecto",
         "STATUS": "Estado",
+        "SUMMARY": "Resumen",
         "WRITE_A_COMMENT": "Escribir un comentario"
       },
       "S": {
@@ -205,13 +216,27 @@
       }
     },
     "REDMINE": {
+      "DIALOG_INITIAL": {
+        "TITLE": "Configurar Redmine para el proyecto"
+      },
       "FORM": {
-        "PROJECT_ID_DESCRIPTION": "Se puede encontrar como parte de la URL al ver el proyecto en el navegador."
+        "PROJECT_ID": "Identificador del proyecto",
+        "PROJECT_ID_DESCRIPTION": "Se puede encontrar como parte de la URL al ver el proyecto en el navegador.",
+        "HOST": "Host (por ejemplo: https://redmine.org)",
+        "API_KEY": "Clave de acceso a la API",
+        "SCOPE": "Alcance",
+        "SCOPE_ALL": "Todo",
+        "SCOPE_ASSIGNED": "Asignado a mi",
+        "SCOPE_CREATED": "Creado por mi"
       },
       "FORM_SECTION": {
+        "TITLE": "Redmine",
         "HELP": "<p>Aquí puedes configurar SuperProductivity para listar los problemas abiertos de Redmine (ya sea la versión en línea o una instancia autohospedada) para un proyecto específico en el panel de creación de tareas en la vista de planificación diaria. Se mostrarán como sugerencias y proporcionarán un enlace al problema así como más información sobre el mismo.</p><p>Además, puedes importar automáticamente todos los problemas abiertos.</p>"
       },
       "ISSUE_CONTENT": {
+        "AUTHOR": "Autor",
+        "STATUS": "Estado",
+        "PRIORITY": "Prioridad",
         "DESCRIPTION": "Descripción",
         "MARK_AS_CHECKED": "Marcar actualizaciones como revisadas"
       },
@@ -242,6 +267,8 @@
         "AT": "a",
         "DESCRIPTION": "Descripción",
         "LABELS": "Etiquetas",
+        "LAST_COMMENT": "Último comentario",
+        "LOAD_ALL_COMMENTS": "Cargar todos los {{nr}} comentarios",
         "LOAD_DESCRIPTION_AND_ALL_COMMENTS": "Cargar descripción y todos los comentarios",
         "MARK_AS_CHECKED": "Marcar actualizaciones como verificadas",
         "STATUS": "Estado",
@@ -260,6 +287,7 @@
       "DIALOG_SUBMIT_WORKLOG": {
         "PAST_DAY_INFO": "La duración prellenada contiene datos no rastreados de días anteriores.",
         "TITLE": "Enviar tiempo dedicado a los problemas a GitLab",
+        "T_TITLE": "Título",
         "T_TO_BE_SUBMITTED": "Por enviar",
         "TOTAL_MSG": "Vas a enviar <em>{totalTimeToSubmit}</em> de tiempo trabajado en total para hoy a <em>{nrOfTasksToSubmit}</em> problemas diferentes."
       },
@@ -307,7 +335,9 @@
       "FORM": {
         "HELP": "Repite la frase configurada cada X cuando se rastrea el tiempo en una tarea.",
         "L_INTERVAL": "Intervalo para repetir frase",
-        "L_TEXT_DESCRIPTION": "Por ejemplo: \"¡Trabaja en ${currentTaskTitle}!\""
+        "L_TEXT": "Texto",
+        "L_TEXT_DESCRIPTION": "Por ejemplo: \"¡Trabaja en ${currentTaskTitle}!\"",
+        "TITLE": "Modo Domina"
       }
     },
     "ISSUE": {
@@ -349,7 +379,8 @@
         "MAP_CUSTOM_FIELDS_INFO": "Desafortunadamente, algunos de los datos de Jira se guardan en campos personalizados que son diferentes para cada instalación. Si desea incluir estos datos, debe seleccionar el campo personalizado adecuado para ellos.",
         "OPEN": "Estado de tareas en pausa",
         "SELECT_ISSUE_FOR_TRANSITIONS": "Seleccione el problema para cargar las transiciones disponibles",
-        "STORY_POINTS": "Puntos de historia"
+        "STORY_POINTS": "Puntos de historia",
+        "TRANSITION": "Manejo de transiciones"
       },
       "DIALOG_CONFIRM_ASSIGNMENT": {
         "MSG": "<strong>{{summary}}</strong> actualmente está asignado a <strong>{{assignee}}</strong>. ¿Quieres asignártela a ti mismo?",
@@ -438,6 +469,7 @@
         "LIST_OF_CHANGES": "Lista de cambios",
         "MARK_AS_CHECKED": "Marcar actualizaciones como verificadas",
         "ON": "en",
+        "RELATED": "Relacionado",
         "STATUS": "Estado",
         "STORY_POINTS": "Puntos de historia",
         "SUB_TASKS": "Subtareas",
@@ -535,6 +567,11 @@
       "EDIT_FULLSCREEN": "Editar en pantalla completa"
     },
     "OPEN_PROJECT": {
+      "CFG_CMP": {
+        "ALWAYS_ASK": "Siempre abrir diálogo",
+        "DONE": "Estado de finalización de la tarea",
+        "ENABLE": "Habilitar la integración de Openproject"
+      },
       "DIALOG_INITIAL": {
         "TITLE": "Configurar OpenProject para Project"
       },
